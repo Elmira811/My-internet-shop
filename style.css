@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  font-family: Oswald;
+  font-size: 1.8em;
+  color: #c9aa20;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.site-search {
+  display: flex;
+}
+
+.site-search input {
+  border: 1px solid #808080;
+  border-radius: 4px 0 0 4px;
+  width: 200px;
+  height: 25px;
+}
+
+.site-search input:focus {
+  outline-color: #87cbd4;
+  outline-style: solid;
+}
+
+.site-search button {
+  background: #87cbd4;
+  border: 1px solid #808080;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+  width: 25px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+
+#shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#nothing-found {
+  color: #000;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.shop-item {
+  width: calc(25% - 30px);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid ;
+}
+
+.shop-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.shop-item .content {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.shop-item .tags {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.shop-item .tag {
+  background: rgba(232, 228, 200, .4);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.shop-item h1 {
+  font-size: 0.9em;
+  margin: 5px 0 10px;
+  text-align: left;
+}
+
+.shop-item p {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.shop-item .footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.shop-item .price {
+  background-color: #e8e4c8;
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.shop-item .rating {
+  color: #e0c60d;
+}
